@@ -6,6 +6,8 @@
 }
 
 body {
+  background: #242323;
+  color: #444444;
   padding: 0;
 }
 
@@ -21,6 +23,7 @@ body {
 .header {
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 10px;
+
 }
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
@@ -80,4 +83,10 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+}
+.navbar {
+  background: #242323;
+}
+.navbar .navbar-brand {
+  color:#FFFFFF;
 }
