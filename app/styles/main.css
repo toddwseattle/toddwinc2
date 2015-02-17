@@ -10,6 +10,16 @@ body {
   color: #444444;
   padding: 0;
 }
+a:link {
+  color: #989191
+
+}
+a:visited{
+  color: #615E5E
+}
+a:hover{
+  background:  #0F0808
+}
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
@@ -48,6 +58,7 @@ body {
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
+  background: #989191
 }
 .jumbotron .btn {
   font-size: 21px;
