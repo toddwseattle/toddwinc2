@@ -2,7 +2,10 @@
 	"id" : 1,
 	"activetype" : "startup",
 	"name" : "TempoIQ",
+	"companyurl":"http://www.tempoiq.com",
 	"logo" : "https://www.tempoiq.com/static/img/tempo-small.svg",
+	"logoheight" : 40,
+	"logowidth" : 192,
 	"description" : "TempoIQ is a Chicago Based company doing realtime time series alerting and analytics for the Internet of Things.  Divergent made an investment in 2013 and Todd serves on the board of directors"
 	
 },
@@ -10,6 +13,9 @@
 	"id": 2,
 	"activetype" : "startup",
 	"name": "ReadyPulse",
+	"companyurl":"http://www.readypulse.com",
+	"logoheight": 40,
+	"logowidth" : 192,
 	"logo" : "http://ww2.readypulse.com/wp-content/themes/readypulse/images/RP_Logo.svg",
 	"description" : "ReadyPulse provides marketers tools for demonstrating social proof at scale.  ReadyPulse enables brands to cultivate brand ambasadors and find the most effective, authentic, and verified social proof to integrate into marketing"
 }]
