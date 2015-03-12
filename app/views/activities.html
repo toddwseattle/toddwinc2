@@ -1,12 +1,15 @@
 <h3>Activities</h3>
 <p>Todd is involved in entrepreneurial and educational activities.   His principal work is as a managing director at Divergent Ventures.   He is also involved in Higher Education through his work at Northwestern University, Ashesi University in Ghana, and Venturewell.   Prior to joining Divergent, Todd also did some angel investing.  Divergent is Todd's primary current startup investment vehicle.</p>
 <h4>Startup Boards through Divergent</h4>
-<div ng-if="startups!='error'">
+<div ng-if="startups.length>0">
 	<div ng-repeat="c in startups">
 		<a href="{{c.companyurl}}"><h5>{{c.name}}</h5>
 		<img src="{{c.logo}}" width={{c.logowidth}} height={{c.logoheight}}></a>
 		<p>{{c.description}}</p>
 	</div>
+</div>
+<div ng-if="startups.length==0">
+	<p>No Activities loaded</p>
 </div>
 <h4>Non-Profit Boards</h4>
 <h4>Recent Teaching Engagements</h4>

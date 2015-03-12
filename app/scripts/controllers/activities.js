@@ -8,23 +8,24 @@
  * Controller of the toddwincStrapApp
  */
 angular.module('toddwincStrapApp')
-  .controller('ActivitiesCtrl', ['$scope','$http',function ($scope,$http) {
-  	$scope.foo="foo";
+  .controller('ActivitiesCtrl', ['$scope','$http','twContent',function ($scope,$http,twContent) {
+  	$scope.foo='foo';
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-    $http.get('/data/activities.json').
-  success(function(data, status, headers, config) {
-  	  $scope.startups=data;
-  	  console.log('$scope.startups',$scope.startups);
-    // this callback will be called asynchronously
-    // when the response is available
-  }).
-  error(function(data, status, headers, config) {
-  	$scope.startups="error"
-    // called asynchronously if an error occurs
-    // or server returns response with an error status.
-  });
+    $scope.some=twContent.someMethod();
+	if(!twContent.iscached()){
+		twContent.getstartups()
+			.success(function(startups){
+				$scope.startups=startups;
+			})
+		.error(function(){
+			//$modal({title: 'Unable to Fetch Content', content: twContent.errorMessage(), show: true});
+			console.log('retrieval failed for startups');
+		});
+	} else {
+		$scope.startups=twContent.getstartupCache();
+	}
   }]);
