@@ -6,6 +6,7 @@
 		<a href="{{c.companyurl}}"><h5>{{c.name}}</h5>
 		<img src="{{c.logo}}" width={{c.logowidth}} height={{c.logoheight}}></a>
 		<p>{{c.description}}</p>
+		<p ng-if="c.crunchbaseurl.length>0">More info in the <a href="{{c.crunchbaseurl}}">{{c.name}} CrunchBase profile</a></p>
 	</div>
 </div>
 <div ng-if="startups.length==0">
