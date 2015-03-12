@@ -20,4 +20,15 @@
 	"logowidth" : 192,
 	"logo" : "http://ww2.readypulse.com/wp-content/themes/readypulse/images/RP_Logo.svg",
 	"description" : "ReadyPulse provides marketers tools for demonstrating social proof at scale.  ReadyPulse enables brands to cultivate brand ambasadors and find the most effective, authentic, and verified social proof to integrate into marketing"
+},
+{
+	"id": 2,
+	"activetype" : "startup",
+	"name": "BlueTalon",
+	"companyurl":"http://www.bluetalon.com",
+	"crunchbaseurl":"https://www.crunchbase.com/organization/bluetalon",
+	"logoheight": 40,
+	"logowidth" : 192,
+	"logo" : "http://bluetalon.com/wp-content/uploads/2014/11/BlueTalon-Logo-Small.png",
+	"description" : "BlueTalon, a bay area company, provides a policy engine to help customers safeguard Hadoop data.  The BlueTalon policy engine provisions and enforces your data access policies and provides controls on even the most sensitive data"
 }]
