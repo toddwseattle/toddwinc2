@@ -1,14 +1,36 @@
 <h3>Activities</h3>
 <p>Todd is involved in entrepreneurial and educational activities.   His principal work is as a managing director at Divergent Ventures.   He is also involved in Higher Education through his work at Northwestern University, Ashesi University in Ghana, and Venturewell.   Prior to joining Divergent, Todd also did some angel investing.  Divergent is Todd's primary current startup investment vehicle.</p>
+<div class="panel panel-default">
+<div class="panel-heading"><img src="images/PNG-white-on-transpM.png" width="192" height="40"></div>
+<div class="panel-body">
+<p><a href="http://www.divergentvc.com">Divergent Ventures</a> is and early stage venture capital focused on seed and series A investments.  Divergent is in its third fund, and invests on the West Coast and as far East as Chicago.  Our focus is on companies in the information technology field around the infrastructure themes of:</p>
+<li>Storage</li>
+<li>Cloud Infrastructure</li>
+<li>Big Data Infrastructure</li>
+<li>Big Data Applications</li>
+</div>
+</div>
 <h4>Startup Boards through Divergent</h4>
 <div ng-if="startups.length>0">
-	<div ng-repeat="c in startups">
-		<a href="{{c.companyurl}}"><h5>{{c.name}}</h5>
-		<img src="{{c.logo}}" width={{c.logowidth}} height={{c.logoheight}}></a>
-		<p>{{c.description}}</p>
-		<p ng-if="c.crunchbaseurl.length>0">More information in the <a href="{{c.crunchbaseurl}}">{{c.name}} CrunchBase profile</a></p>
-	</div>
-</div>
+	<div class="panel-group" ng-model="activePanel" bs-collapse>
+		<div class="panel panel-default" ng-repeat="panel in startups">
+			<div class="panel-heading">
+				<h5 class="panel-title">
+					<a bs-collapse-toggle>
+						<img src="{{panel.logo}}" width={{panel.logowidth}} height={{panel.logoheight}}>
+					</a>
+				</h5>
+			</div>
+			<div class="panel-collapse" bs-collapse-target>
+				<div class="panel-body">
+					<p>{{panel.description}}</p>
+					<p>Company website for <a href="{{panel.companyurl}}">{{panel.name}}</a></p>
+					<p ng-if="panel.crunchbaseurl.length>0">More information in the <a href="{{panel.crunchbaseurl}}">{{panel.name}} CrunchBase profile</a></p>
+				</div>
+			</div>
+		</div>
+	</div>	
+	
 <div ng-if="startups.length==0">
 	<p>No Activities loaded</p>
 </div>

@@ -9,12 +9,7 @@
  */
 angular.module('toddwincStrapApp')
   .controller('ActivitiesCtrl', ['$scope','$http','twContent',function ($scope,$http,twContent) {
-  	$scope.foo='foo';
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+	$scope.activePanel=0;
     $scope.some=twContent.someMethod();
 	if(!twContent.iscached()){
 		twContent.getstartups()

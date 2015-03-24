@@ -66,7 +66,7 @@ a:hover{
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
-  background: #989191
+  background: #989191;
 }
 .jumbotron .btn {
   font-size: 21px;
@@ -108,4 +108,17 @@ a:hover{
 }
 .navbar .navbar-brand {
   color:#FFFFFF;
+}
+.panel-default > .panel-heading {
+  background:#242323;
+}
+.panel-heading{
+  background:#242323;
+}
+.panel-title {
+  background:#242323;
+  border-color: #242323;
+}
+.panel-body {
+ background: #989191;
 }
