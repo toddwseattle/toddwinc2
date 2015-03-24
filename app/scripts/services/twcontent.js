@@ -15,12 +15,42 @@ angular.module('toddwincStrapApp')
     var meaningOfLife = 42,
         errorMsg='No Error',
         startups=[],
+        courses=[],
+        angel=[],
+        nonprofit=[],
+        nu=[],
         cached=false;
 
     function getStartups(){
           return $http.get('/data/activities.json')
             .success(function(data){
-              startups=data;
+              angular.forEach(data,function(element){
+                if(!angular.isUndefined(element.activetype)){
+                  switch(element.activetype){
+                    case 'startup' : 
+                      startups.push(element);
+                      break;
+                    case 'course' :
+                      courses.push(element);
+                      break;
+                    case 'nonprofit' :
+                      nonprofit.push(element);
+                      break;
+                    case 'nu' :
+                      nu.push(element);
+                      break;
+                    case 'angel' :
+                      angel.push(element);
+                      break;
+                    default:
+                      $log.error('uknown activity type:'+element.activetype);
+
+                  }
+                }else{
+                  $log.error('no activity type for element : '+element.toString());
+                }
+
+              });
               $log.info('data:'+data);
               cached=true;
             });

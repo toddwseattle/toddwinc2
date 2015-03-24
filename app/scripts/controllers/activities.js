@@ -14,7 +14,7 @@ angular.module('toddwincStrapApp')
 	if(!twContent.iscached()){
 		twContent.getstartups()
 			.success(function(startups){
-				$scope.startups=startups;
+				$scope.startups=twContent.getstartupCache();
 			})
 		.error(function(){
 			//$modal({title: 'Unable to Fetch Content', content: twContent.errorMessage(), show: true});

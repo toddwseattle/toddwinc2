@@ -22,7 +22,7 @@
 	"description" : "ReadyPulse provides marketers tools for demonstrating social proof at scale.  ReadyPulse enables brands to cultivate brand ambasadors and find the most effective, authentic, and verified social proof to integrate into marketing"
 },
 {
-	"id": 2,
+	"id": 3,
 	"activetype" : "startup",
 	"name": "BlueTalon",
 	"companyurl":"http://www.bluetalon.com",
@@ -31,4 +31,85 @@
 	"logowidth" : 192,
 	"logo" : "http://bluetalon.com/wp-content/uploads/2014/11/BlueTalon-Logo-Small.png",
 	"description" : "BlueTalon, a bay area company, provides a policy engine to help customers safeguard Hadoop data.  The BlueTalon policy engine provisions and enforces your data access policies and provides controls on even the most sensitive data"
-}]
+
+},
+{
+	"id": 4,
+	"activetype":"nonprofit",
+	"name" :"Ashesi University",
+	"orgurl" :"http://www.ashesi.org",
+	"logo" : "http://ashesi.org/wp-content/uploads/2013/11/logo-header-2.jpg",
+	"logoheight": 60,
+	"logowidth" : 240,
+    "description" : "The Ashesi University Foundation supports Ashesi University College in Ghana.  Ashesi is a four year institution of higher education focused on fostering leadership, ethics, and critical thinking to educate the next generation of African Leaders.  It has a residential campus in Berekuso outside Accra, Ghana.",
+    "impact" : "Ashesi currently has 600 students from more than 18 African countries in the Majors of Computer Science, Business, and MIS.  In Fall 2015 Ashesi will add an Engineering program focuses on Mechanical, Electrical, and Computer Engineering.  Ashesi has produced more than 600 graduates.  Most are making a tremendous impact across their home continent.",
+    "toddrole" : "Ashesi provides leveraged impact to tackle the African continents most pressing problems with locally grown leaders and solutions.  Todd has been involved with Ashesi since reviewing Microsoft colleague Patrick Awuah's business plan.   Todd currently serves as chair of the foundation and has been on the board for more than 10 years.  In 2014, Todd lived on campus for the Fall Semester and taught in computer science and business."
+
+},
+{
+	"id": 5,
+	"activetype":"nonprofit",
+	"name" :"VentureWell",
+	"orgurl" :"http://www.venturewell.org",
+	"logo" : "http://venturewell.org/wp-content/themes/VentureWell/library/img/logo.png",
+	"logoheight": 40,
+	"logowidth" : 192,
+    "description" : "VentureWell is a higher education network that cultivates revolutionary ideas and promising inventions. For nearly twenty years, venturewell has been on a mission to launch new ventures from an emerging generation of young inventors driven to improve life for people and the planet.  VentureWell focuses on student inventors, making grants and providing training to faculty and students",
+    "impact" : "VentureWell has spawned more than 600 new courses and programs across 160 campuses to transform eduction in science, engineering and business.  Through it's work, VentureWell has impacted thousands of students and student and faculty formed companies.",
+    "toddrole" : "VentureWell fits Todd's model of leveraged impact through higher education and innovation.  Todd has been on the board of VentureWell since 2010, and currently serves on it's nominating committee as well as the boards secretary. He's proud to be associated with an organization that lives up to their motto of ideas to impact."
+
+	},
+{
+	"id":6,
+	"activetype":"course",
+	"logo":"http://fcei.northwestern.edu/images/nuvention/web-logos/NUvention-web-logo.jpg",
+	"logoheight": 40,
+	"logowidth" : 192,
+	"name":"NUvention Web and Media",
+	"organization":"Farley Center for Entrepreneurship and Innovation at Northwestern",
+	"orgurl" : "http://fcei.northwestern.edu/",
+	"when" : "Winter and Spring since 2010",
+	"description":"NUvention Web is a two quarter course that combines Northwestern graduate and undergraduate students from the McCormick School of Enginering, Kellogg School of Business, the Medill School of Journalism, as well as Northwestern's other schools to design, plan and run web based businesses.  The course has been recognized by Inc. Magazine and Venturebeat as one of the best Entrepreneurship courses in the country.   Student teams have had their work recognized in TechCrunch, PCMag, Rolling Stone and GigaOM as well as gone on to prominent accelerators around the country. More than 300 students have gone through the program to date.   Todd teachs the course with Michael Marasco and a number of other talented Northwestern faculty and alum entrepreneurs.  He also chairs coordination of its industry advisory board.",
+	"infourl" :"http://fcei.northwestern.edu/curriculum/nuvention/web.html"
+},
+{
+	"id":7,
+	"activetype":"course",
+	"name":"Entrepreneurship at Ashesi University",
+	"organization":"Ashesi Univeristy department of business",
+	"orgurl" : "http://www.ashesi.edu.gh/academics/business-administration.html",
+	"when" : "Fall 2014",
+	"description":"Todd co-taught the first semester of the year long Entrepreneurship capstone at Asehsi University with Dr. Sena Ageypong in the fall of 2014.  Todd and Sena adapted the Lean LaunchPad curriculum to Ashesi and West Africa.  50+ students in 10 teams develped businesses across a wide variety of areas in the Ghanian Market.  The course is the subject of a paper presented at VentureWell Open 2015.",
+	"infourl" :""
+},
+{
+	"id":8,
+	"activetype":"course",
+	"name":"Software Engineering at Ashesi University",
+	"organization":"Ashesi Univeristy department of Computer Science",
+	"orgurl" : "http://www.ashesi.edu.gh/academics/computer-science.html",
+	"when" : "Fall 2014",
+	"description":"This one semester software engineering course, modeled on NUvention Web and Software Engineering at Northwestern, focused on personal and team software design using agile techniques in JavaScript and AngularJS.   The class extensively used modern techniques and tools including GitHub to help students solve real problems with real users quickly.",
+	"infourl" :"http://www.toddwarreninc.com/blog/2014/10/03/a-new-course-in-software-engineering-at-ashesi-university/"
+},
+{
+	"id":9,
+	"activetype":"course",
+	"name":"EECS 395 Building Software Products",
+	"organization":"Northwestern University Department of Electrial Engineering and Computer Science",
+	"orgurl" : "http://eecs.northwestern.edu/",
+	"when" : "Spring 2009",
+	"description":"A one quarter course focused on software development and software project management as it applies to software products.  Teams learned the basics of developing a vision for a software product, how to research user needs using contextual design, wrote detailed functional specifications, and agile development methodology.  Students developed applications for Facebook in .Net",
+	"infourl" :""
+},
+{
+	"id":10,
+	"activetype":"course",
+	"name":"EECS 394 Software Engineering",
+	"organization":"Northwestern University Department of Computer Science",
+	"orgurl" : "http://eecs.northwestern.edu/",
+	"when" : "Spring 2001",
+	"description":"A one quarter course with more than 60 students focused on software development and software project management.  Teams learned the basics of developing a vision for a software product, how to research user needs using contextual design, wrote detailed functional specifications, and experimented with the then new eXtreme Programing methodology.  Todd's first experience teaching at Northwestern.",
+	"infourl" :""
+}
+]
