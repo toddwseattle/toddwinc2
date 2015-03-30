@@ -63,14 +63,14 @@
 	"id":6,
 	"activetype":"course",
 	"logo":"http://fcei.northwestern.edu/images/nuvention/web-logos/NUvention-web-logo.jpg",
-	"logoheight": 40,
-	"logowidth" : 192,
+	"logoheight": 80,
+	"logowidth" : 400,
 	"name":"NUvention Web and Media",
 	"organization":"Farley Center for Entrepreneurship and Innovation at Northwestern",
 	"orgurl" : "http://fcei.northwestern.edu/",
 	"when" : "Winter and Spring since 2010",
 	"description":"NUvention Web is a two quarter course that combines Northwestern graduate and undergraduate students from the McCormick School of Enginering, Kellogg School of Business, the Medill School of Journalism, as well as Northwestern's other schools to design, plan and run web based businesses.  The course has been recognized by Inc. Magazine and Venturebeat as one of the best Entrepreneurship courses in the country.   Student teams have had their work recognized in TechCrunch, PCMag, Rolling Stone and GigaOM as well as gone on to prominent accelerators around the country. More than 300 students have gone through the program to date.   Todd teachs the course with Michael Marasco and a number of other talented Northwestern faculty and alum entrepreneurs.  He also chairs coordination of its industry advisory board.",
-	"infourl" :"http://fcei.northwestern.edu/curriculum/nuvention/web.html"
+	"infourl" :{"link": "http://fcei.northwestern.edu/curriculum/nuvention/web.html","description":"Farley Center Page for NUvention Web + Media"}
 },
 {
 	"id":7,
@@ -80,7 +80,7 @@
 	"orgurl" : "http://www.ashesi.edu.gh/academics/business-administration.html",
 	"when" : "Fall 2014",
 	"description":"Todd co-taught the first semester of the year long Entrepreneurship capstone at Asehsi University with Dr. Sena Ageypong in the fall of 2014.  Todd and Sena adapted the Lean LaunchPad curriculum to Ashesi and West Africa.  50+ students in 10 teams develped businesses across a wide variety of areas in the Ghanian Market.  The course is the subject of a paper presented at VentureWell Open 2015.",
-	"infourl" :""
+	"infourl" :{"link": "http://www.toddwarreninc.com/blog/2014/11/16/teaching-entrepreneurship-at-ashesi/","description":"My blog post"}
 },
 {
 	"id":8,
@@ -90,7 +90,7 @@
 	"orgurl" : "http://www.ashesi.edu.gh/academics/computer-science.html",
 	"when" : "Fall 2014",
 	"description":"This one semester software engineering course, modeled on NUvention Web and Software Engineering at Northwestern, focused on personal and team software design using agile techniques in JavaScript and AngularJS.   The class extensively used modern techniques and tools including GitHub to help students solve real problems with real users quickly.",
-	"infourl" :"http://www.toddwarreninc.com/blog/2014/10/03/a-new-course-in-software-engineering-at-ashesi-university/"
+	"infourl" :{"link":"http://www.toddwarreninc.com/blog/2014/10/03/a-new-course-in-software-engineering-at-ashesi-university/","description":"My blog post"}
 },
 {
 	"id":9,
@@ -100,7 +100,7 @@
 	"orgurl" : "http://eecs.northwestern.edu/",
 	"when" : "Spring 2009",
 	"description":"A one quarter course focused on software development and software project management as it applies to software products.  Teams learned the basics of developing a vision for a software product, how to research user needs using contextual design, wrote detailed functional specifications, and agile development methodology.  Students developed applications for Facebook in .Net",
-	"infourl" :""
+	"infourl" :{"link": "","description":""}
 },
 {
 	"id":10,
@@ -110,6 +110,6 @@
 	"orgurl" : "http://eecs.northwestern.edu/",
 	"when" : "Spring 2001",
 	"description":"A one quarter course with more than 60 students focused on software development and software project management.  Teams learned the basics of developing a vision for a software product, how to research user needs using contextual design, wrote detailed functional specifications, and experimented with the then new eXtreme Programing methodology.  Todd's first experience teaching at Northwestern.",
-	"infourl" :""
+	"infourl" :{"link": "","description":""}
 }
 ]

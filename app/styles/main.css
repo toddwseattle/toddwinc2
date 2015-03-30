@@ -18,6 +18,10 @@ body {
 h4 {
   color:#CCCCCC;
 }
+h5 {
+  color:#CCCCCC;
+}
+
 a:link {
   color: #989191
 
@@ -118,6 +122,7 @@ a:hover{
 .panel-title {
   background:#242323;
   border-color: #242323;
+  color:#989191;
 }
 .panel-body {
  background: #989191;

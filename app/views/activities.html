@@ -10,13 +10,17 @@
 <li>Big Data Applications</li>
 </div>
 </div>
-<h4>Startup Boards through Divergent</h4>
+<h4>
+<button ng-if="startups.activePanels.length<startups.length" class="glyphicon glyphicon-plus" bs-tooltip="{title:'click to expand all'}" ng-click="openAllPanels(startups)"></button>
+<button ng-if="startups.activePanels.length==startups.length" class="glyphicon glyphicon-minus" bs-tooltip="{title:'click to collapse all'}" ng-click="startups.activePanels=[]"></button>
+Startup Boards through Divergent </h4>
 <div ng-if="startups.length>0">
-	<div class="panel-group" ng-model="activePanel" bs-collapse>
+
+	<div class="panel-group" ng-model="startups.activePanels" data-allow-multiple="true" bs-collapse>
 		<div class="panel panel-default" ng-repeat="panel in startups">
 			<div class="panel-heading">
 				<h5 class="panel-title">
-					<a bs-collapse-toggle>
+					<a bs-collapse-toggle bs-tooltip="{title:'click to expand/collapse'}">
 						<img src="{{panel.logo}}" width={{panel.logowidth}} height={{panel.logoheight}}>
 					</a>
 				</h5>
@@ -32,9 +36,65 @@
 	</div>	
 	
 <div ng-if="startups.length==0">
-	<p>No Activities loaded</p>
+	<p>No Startups loaded</p>
 </div>
-<h4>Non-Profit Boards</h4>
-<h4>Recent Teaching Engagements</h4>
+<h4 ng-if="nonprofits.length>0">
+<button ng-if="nonprofits.activePanels.length<nonprofits.length" class="glyphicon glyphicon-plus" bs-tooltip="{title:'click to expand all'}" ng-click="openAllPanels(nonprofits)"></button>
+<button ng-if="nonprofits.activePanels.length==nonprofits.length" class="glyphicon glyphicon-minus" bs-tooltip="{title:'click to collapse all'}" ng-click="nonprofits.activePanels=[]"></button>
+Non-Profit Boards</h4>
+<div ng-if="nonprofits.length>0">
+	<div class="panel-group" ng-model="nonprofits.activePanels" data-allow-multiple="true"bs-collapse>
+		<div class="panel panel-default" ng-repeat="panel in nonprofits">
+			<div class="panel-heading">
+				<h5 class="panel-title">
+					<a bs-collapse-toggle style=".hover{width:{{panel.logowidth}};height:{{panel.logoheight}}}" bs-tooltip="{title:'click to expand/collapse'}">
+						<img src="{{panel.logo}}" width={{panel.logowidth}} height={{panel.logoheight}}>
+					</a>
+				</h5>
+			</div>
+			<div class="panel-collapse" bs-collapse-target>
+				<div class="panel-body">
+					<p>{{panel.description}}</p>
+					<p>{{panel.impact}}</p>
+					<p>{{panel.toddrole}}</p>
+					<p>website for <a href="{{panel.orgurl}}">{{panel.name}}</a></p>
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>
+	
+<div ng-if="nonprofits.length==0">
+	<p>No Non-Profits loaded</p>
+</div>
+<div ng-if="courses.length>0">
+	<h4>
+		<button ng-if="courses.activePanels.length<courses.length" class="glyphicon glyphicon-plus" bs-tooltip="{title:'click to expand all'}" ng-click="openAllPanels(courses)"></button>
+<button ng-if="courses.activePanels.length==courses.length" class="glyphicon glyphicon-minus" bs-tooltip="{title:'click to collapse all'}" ng-click="courses.activePanels=[]">
+</button>
+	Recent Teaching Engagements</h4>
+	<div class="panel-group" ng-model="courses.activePanels" data-allow-multiple="true" bs-collapse>
+		<div class="panel panel-default" ng-repeat="panel in courses">
+			<div class="panel-heading">
+				<h5 class="panel-title">
+					<a ng-if="hasLogo(panel)" bs-collapse-toggle bs-tooltip="{title:'click to expand/collapse'}">
+						<img src="{{panel.logo}}" width={{panel.logowidth}} height={{panel.logoheight}}>
+						{{panel.when}}
+					</a>
+					<div ng-if="!hasLogo(panel)" bs-collapse-toggle bs-tooltip="{title:'click to expand/collapse'}">
+						{{panel.name}} taught {{panel.when}}
+					</div>
+				</h5>
+			</div>
+			<div class="panel-collapse" bs-collapse-target>
+				<div class="panel-body">
+					<p>Taught in the <a href="{{panel.orgurl}}">{{panel.organization}}</a>.</p>
+					<p>{{panel.description}}</p>
+					<p>for more information see <a href="{{panel.infourl.link}}">{{panel.infourl.description}}</a></p>
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>
 <h4>Advisory Activities at Northwestern</h4>
 <h4>Active Angel Investments</h4>

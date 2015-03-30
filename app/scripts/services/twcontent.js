@@ -17,7 +17,7 @@ angular.module('toddwincStrapApp')
         startups=[],
         courses=[],
         angel=[],
-        nonprofit=[],
+        nonprofits=[],
         nu=[],
         cached=false;
 
@@ -34,7 +34,7 @@ angular.module('toddwincStrapApp')
                       courses.push(element);
                       break;
                     case 'nonprofit' :
-                      nonprofit.push(element);
+                      nonprofits.push(element);
                       break;
                     case 'nu' :
                       nu.push(element);
@@ -65,6 +65,12 @@ angular.module('toddwincStrapApp')
       getstartups: getStartups,
       getstartupCache : function(){
           return startups;
+      },
+      getcoursesCache :function(){
+        return courses;
+      },
+      getnonprofitsCache :function(){
+        return nonprofits;
       },
       iscached : function(){ return(cached); },
       errorMessage : function(){ return(errorMsg); }
