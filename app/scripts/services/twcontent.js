@@ -72,6 +72,12 @@ angular.module('toddwincStrapApp')
       getnonprofitsCache :function(){
         return nonprofits;
       },
+      getnuCache :function(){
+        return nu;
+      },
+      getangelCache : function(){
+        return angel;
+      },
       iscached : function(){ return(cached); },
       errorMessage : function(){ return(errorMsg); }
     }; //return factory twContent

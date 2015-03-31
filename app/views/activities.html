@@ -1,5 +1,5 @@
 <h3>Activities</h3>
-<p>Todd is involved in entrepreneurial and educational activities.   His principal work is as a managing director at Divergent Ventures.   He is also involved in Higher Education through his work at Northwestern University, Ashesi University in Ghana, and Venturewell.   Prior to joining Divergent, Todd also did some angel investing.  Divergent is Todd's primary current startup investment vehicle.</p>
+<p>Todd is involved in entrepreneurial and educational activities.   His principal work is as a managing director at Divergent Ventures.   He is also involved in Higher Education through his work at Northwestern University, Ashesi University in Ghana, and Venturewell.   He has had a number of teaching engagements over the years.  Prior to joining Divergent, Todd also did some angel investing.  Divergent is Todd's primary current startup investment vehicle.</p>
 <div class="panel panel-default">
 <div class="panel-heading"><img src="images/PNG-white-on-transpM.png" width="192" height="40"></div>
 <div class="panel-body">
@@ -96,5 +96,60 @@ Non-Profit Boards</h4>
 		</div>
 	</div>	
 </div>
-<h4>Advisory Activities at Northwestern</h4>
-<h4>Active Angel Investments</h4>
+<div ng-if="nu.length>0">
+	<h4>
+		<button ng-if="nu.activePanels.length<nu.length" class="glyphicon glyphicon-plus" bs-tooltip="{title:'click to expand all'}" ng-click="openAllPanels(nu)">
+		</button>
+		<button ng-if="nu.activePanels.length==nu.length" class="glyphicon glyphicon-minus" bs-tooltip="{title:'click to collapse all'}" ng-click="nu.activePanels=[]">
+		</button>
+		Advisory Activities at Northwestern
+	</h4>
+	<div class="panel-group" ng-model="nu.activePanels" data-allow-multiple="true" bs-collapse>
+		<div class="panel panel-default" ng-repeat="panel in nu">
+			<div class="panel-heading">
+				<h5 class="panel-title">
+					<div  bs-collapse-toggle bs-tooltip="{title:'click to expand/collapse'}">
+						{{panel.name}} 
+					</div>
+				</h5>
+			</div>
+			<div class="panel-collapse" bs-collapse-target>
+				<div class="panel-body">
+					<p>Activity supports the <a href="{{panel.orgurl}}">{{panel.organization}}</a></p>
+					<p>{{panel.description}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div ng-if="angel.length>0">
+	<h4><button ng-if="angel.activePanels.length<angel.length" class="glyphicon glyphicon-plus" bs-tooltip="{title:'click to expand all'}" ng-click="openAllPanels(angel)">
+		</button>
+		<button ng-if="angel.activePanels.length==angel.length" class="glyphicon glyphicon-minus" bs-tooltip="{title:'click to collapse all'}" ng-click="angel.activePanels=[]">
+		</button>
+		Active Angel Investments</h4>
+	<div class="panel-group" ng-model="angel.activePanels" data-allow-multiple="true" bs-collapse>
+		<div class="panel panel-default" ng-repeat="panel in angel">
+			<div class="panel-heading">
+				<h5 class="panel-title">
+					<a ng-if="hasLogo(panel)" bs-collapse-toggle bs-tooltip="{title:'click to expand/collapse'}">
+						<img src="{{panel.logo}}" width={{panel.logowidth}} height={{panel.logoheight}}>
+						{{panel.when}}
+					</a>
+					<div ng-if="!hasLogo(panel)" bs-collapse-toggle bs-tooltip="{title:'click to expand/collapse'}">
+						{{panel.name}}
+					</div>
+				</h5>
+			</div>
+			<div class="panel-collapse" bs-collapse-target>
+				<div class="panel-body">
+					<p>Angel stage investment in <a href="{{panel.orgurl}}">{{panel.name}}</a>.</p>
+					<p>{{panel.description}}</p>
+					<p>{{panel.toddrole}}</p>
+					<p ng-if="panel.crunchbaseurl.length>0">Read more about in the <a href="{{panel.crunchbaseurl}}">{{panel.name}} Crunchbase profile</a></p>
+					<p ng-if="panel.angellisturl.length>0"><a href="{{panel.angellist">{{panel.name}} on AngelList</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

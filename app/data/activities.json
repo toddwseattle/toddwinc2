@@ -111,5 +111,71 @@
 	"when" : "Spring 2001",
 	"description":"A one quarter course with more than 60 students focused on software development and software project management.  Teams learned the basics of developing a vision for a software product, how to research user needs using contextual design, wrote detailed functional specifications, and experimented with the then new eXtreme Programing methodology.  Todd's first experience teaching at Northwestern.",
 	"infourl" :{"link": "","description":""}
+},
+{
+	"id":11,
+	"activetype":"nu",
+	"name":"EECS Advisory Board",
+	"organization":"Northwestern University Department of Computer Science",
+	"orgurl" : "http://eecs.northwestern.edu/",
+	"when" : "2006 to Present",
+	"description":"Advisory board for the department of Electrical Engineering and Computer Science",
+	"infourl" :{"link": "","description":""}
+},
+{
+	"id":12,
+	"activetype":"nu",
+	"name":"McCormick Advisory Council",
+	"organization":"Northwestern University McCormick School of Engineering",
+	"orgurl" : "http://eecs.northwestern.edu/",
+	"when" : "2012 to present",
+	"description":"Advisory board to the Northewestern Engineering School",
+	"infourl" :{"link": "","description":""}
+},
+{
+	"id":13,
+	"activetype":"nu",
+	"name":"Farley Center for Entrepreneurship Advisory Board",
+	"organization":"Northwestern University Farley Center for Entrepreneurship",
+	"orgurl" : "http://fcei.northwestern.edu/",
+	"when" : "2009 to Present",
+	"description":"Advises the center for Entrepreneurship on curriculum, community engagement, and co-curricular activities.",
+	"infourl" :{"link": "","description":""}
+},
+{
+	"id":14,
+	"activetype":"nu",
+	"name":"School of Communication National Advisory Board",
+	"organization":"Northwestern University School of Communication",
+	"orgurl" : "http://eecs.northwestern.edu/",
+	"when" : "2001 to Present",
+	"description":"Advise School of Communciation on curriculum, co-curricular activities, industry trends and provide development assistance.  Served as chair from 2010-2014.",
+	"infourl" :{"link": "","description":""}
+},
+{
+	"id": 15,
+	"activetype" : "angel",
+	"name": "HappyBits",
+	"companyurl":"http://happybits.co",
+	"crunchbaseurl":"",
+	"angellisturl":"https://angel.co/happybits",
+	"logoheight": 40,
+	"logowidth" : 40,
+	"logo" : "http://happybits.co/img/happybits.png",
+	"description" : "HappyBits provides engaging add-ins to messaging platforms that enable users to better connect with friends",
+	"toddrole" :"One of the founders was a student in Todd's 2001 class at Northwestern. I serve as an informal advisor, and learn way more than I give from these talented founders whose products are on a viral tear."
+},
+{
+	"id": 16,
+	"activetype" : "angel",
+	"name": "GiveForward",
+	"companyurl":"http://giveforward.com",
+	"crunchbaseurl":"https://www.crunchbase.com/organization/giveforward",
+	"angellisturl":"https://angel.co/giveforward",
+	"logoheight": 34,
+	"logowidth" : 150,
+	"logo" : "http://assets.giveforward.com/asset/api/production/stimpy/gf-logo-94cfa9ac54ef2987e716cf9a7da6bf22.png",
+	"description" : "GiveForward provides crowdfunding services to help support friends and family with medical bills and emergency expenses.",
+	"toddrole" :"I met the terrific founding team of Desiree and Ethan through a Northwestern colleague after they completed Chicago Excelerate (Now Techstars Chicago) in 2009.  GiveForward is a great example of how to build a strong positive culture that reflects your brand identity."
 }
 ]
