@@ -1,6 +1,6 @@
 <h3>Activities</h3>
 <p>Todd is involved in entrepreneurial and educational activities.   His principal work is as a managing director at Divergent Ventures.   He is also involved in Higher Education through his work at Northwestern University, Ashesi University in Ghana, and Venturewell.   He has had a number of teaching engagements over the years.  Prior to joining Divergent, Todd also did some angel investing.  Divergent is Todd's primary current startup investment vehicle.</p>
-<div class="panel panel-default">
+<div id="divergent" class="panel panel-default">
 <div class="panel-heading"><img src="images/PNG-white-on-transpM.png" width="192" height="40"></div>
 <div class="panel-body">
 <p><a href="http://www.divergentvc.com">Divergent Ventures</a> is and early stage venture capital focused on seed and series A investments.  Divergent is in its third fund, and invests on the West Coast and as far East as Chicago.  Our focus is on companies in the information technology field around the infrastructure themes of:</p>
@@ -10,7 +10,7 @@
 <li>Big Data Applications</li>
 </div>
 </div>
-<h4>
+<h4 id="boards">
 <button ng-if="startups.activePanels.length<startups.length" class="glyphicon glyphicon-plus" bs-tooltip="{title:'click to expand all'}" ng-click="openAllPanels(startups)"></button>
 <button ng-if="startups.activePanels.length==startups.length" class="glyphicon glyphicon-minus" bs-tooltip="{title:'click to collapse all'}" ng-click="startups.activePanels=[]"></button>
 Startup Boards through Divergent </h4>
@@ -38,7 +38,7 @@ Startup Boards through Divergent </h4>
 <div ng-if="startups.length==0">
 	<p>No Startups loaded</p>
 </div>
-<h4 ng-if="nonprofits.length>0">
+<h4 id="nonprofit" ng-if="nonprofits.length>0">
 <button ng-if="nonprofits.activePanels.length<nonprofits.length" class="glyphicon glyphicon-plus" bs-tooltip="{title:'click to expand all'}" ng-click="openAllPanels(nonprofits)"></button>
 <button ng-if="nonprofits.activePanels.length==nonprofits.length" class="glyphicon glyphicon-minus" bs-tooltip="{title:'click to collapse all'}" ng-click="nonprofits.activePanels=[]"></button>
 Non-Profit Boards</h4>
@@ -67,7 +67,7 @@ Non-Profit Boards</h4>
 <div ng-if="nonprofits.length==0">
 	<p>No Non-Profits loaded</p>
 </div>
-<div ng-if="courses.length>0">
+<div id="courses" ng-if="courses.length>0">
 	<h4>
 		<button ng-if="courses.activePanels.length<courses.length" class="glyphicon glyphicon-plus" bs-tooltip="{title:'click to expand all'}" ng-click="openAllPanels(courses)"></button>
 <button ng-if="courses.activePanels.length==courses.length" class="glyphicon glyphicon-minus" bs-tooltip="{title:'click to collapse all'}" ng-click="courses.activePanels=[]">
@@ -96,7 +96,7 @@ Non-Profit Boards</h4>
 		</div>
 	</div>	
 </div>
-<div ng-if="nu.length>0">
+<div id="nustuff" ng-if="nu.length>0">
 	<h4>
 		<button ng-if="nu.activePanels.length<nu.length" class="glyphicon glyphicon-plus" bs-tooltip="{title:'click to expand all'}" ng-click="openAllPanels(nu)">
 		</button>
@@ -122,7 +122,7 @@ Non-Profit Boards</h4>
 		</div>
 	</div>
 </div>
-<div ng-if="angel.length>0">
+<div id="angel" ng-if="angel.length>0">
 	<h4><button ng-if="angel.activePanels.length<angel.length" class="glyphicon glyphicon-plus" bs-tooltip="{title:'click to expand all'}" ng-click="openAllPanels(angel)">
 		</button>
 		<button ng-if="angel.activePanels.length==angel.length" class="glyphicon glyphicon-minus" bs-tooltip="{title:'click to collapse all'}" ng-click="angel.activePanels=[]">
