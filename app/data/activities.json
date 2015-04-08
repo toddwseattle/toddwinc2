@@ -177,5 +177,39 @@
 	"logo" : "http://assets.giveforward.com/asset/api/production/stimpy/gf-logo-94cfa9ac54ef2987e716cf9a7da6bf22.png",
 	"description" : "GiveForward provides crowdfunding services to help support friends and family with medical bills and emergency expenses.",
 	"toddrole" :"I met the terrific founding team of Desiree and Ethan through a Northwestern colleague after they completed Chicago Excelerate (Now Techstars Chicago) in 2009.  GiveForward is a great example of how to build a strong positive culture that reflects your brand identity."
+},
+{
+	"id": 17,
+	"activetype" : "angel",
+	"name": "GrooveBug",
+	"companyurl":"http://groovebug.com",
+	"crunchbaseurl":"https://www.crunchbase.com/organization/groovebug",
+	"angellisturl":"https://angel.co/groovebug",
+	"logoheight": 34,
+	"logowidth" : 150,
+	"logo" : "http://groovebug.com/wp-content/uploads/2013/07/gb_white1.png",
+	"description" : "Groovebug was founded by students who took my NUvention Web Class in 2010.  It provides a platform that enables highly interactive, engaging music magazines or electronic box sets.   Groovebug powers applications from BlueNote, Deutsche Gramaphone, and Wolfgang's Vault.",
+	"toddrole" :"I taught this team in 2010, and made an investment in 2011.  I currently serve on Groovebug's board of directors."
+},
+{
+"id": 18,
+	"activetype" : "angel",
+	"name": "BigTime Software",
+	"companyurl":"http://bigtime.net",
+	"logoheight": 34,
+	"logowidth" : 150,
+	"logo" : "http://www.bigtime.net/wp-content/uploads/logo-bigtime.png",
+	"description" : "BigTime software provides time and billing as a service.  ",
+	"toddrole" : "Todd connected thorugh a colleague at Northwestern, and has served as an informal advisor on business and architecture strategy."
+},
+{
+	"activetype" : "angel",
+	"name": "TimeBox",
+	"companyurl":"http://www.timeboxapp.com",
+	"logoheight": 34,
+	"logowidth" : 150,
+	"logo" : "http://static1.squarespace.com/static/521e43b2e4b073e6033231c8/t/522fb2d7e4b08c58ebe75d5b/1428011908485/?format=1500w",
+	"description" : "Timebox provides an application to help you build stories of your life based on your photographs and memories.  It automatically organizes your photos from your cloud storage to bring your stories to life.",
+	"toddrole" : "Todd worked with Len Kawell, the very talented founder of timebox at Microsoft."
 }
 ]
