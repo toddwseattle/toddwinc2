@@ -224,4 +224,11 @@
 "description" :"PicoBrew is a reveolutionary internet connected device that enables beer to be brewed reliabliy at home.",
 "toddrole" : "Todd worked with Bill at Microsoft, where Bill was a serial innovator."
 },
+{
+	"id":20,
+	"activetype" : "angel",
+	"name" : "oneforall",
+	"companyurl" :"http://www.oneforall.com",
+	"description" : "oneforall!"
+}
 ]
