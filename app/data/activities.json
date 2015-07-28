@@ -203,6 +203,7 @@
 	"toddrole" : "Todd connected thorugh a colleague at Northwestern, and has served as an informal advisor on business and architecture strategy."
 },
 {
+	"id" : 19,
 	"activetype" : "angel",
 	"name": "TimeBox",
 	"companyurl":"http://www.timeboxapp.com",
@@ -211,5 +212,23 @@
 	"logo" : "http://static1.squarespace.com/static/521e43b2e4b073e6033231c8/t/522fb2d7e4b08c58ebe75d5b/1428011908485/?format=1500w",
 	"description" : "Timebox provides an application to help you build stories of your life based on your photographs and memories.  It automatically organizes your photos from your cloud storage to bring your stories to life.",
 	"toddrole" : "Todd worked with Len Kawell, the very talented founder of timebox at Microsoft."
+},
+{
+"id": 20,
+"activetype" : "angel",
+"name" : "PicoBrew",
+"companyurl" : "http://picobrew.com",
+"logoheight" : 34,
+"logowidth" : 150,
+"logo" :"http://picobrew.com/images/Menu/hm_btn_Logo-Pico.png",
+"description" :"PicoBrew is a reveolutionary internet connected device that enables beer to be brewed reliabliy at home.",
+"toddrole" : "Todd worked with Bill at Microsoft, where Bill was a serial innovator."
+},
+{
+	"id":20,
+	"activetype" : "angel",
+	"name" : "oneforall",
+	"companyurl" :"http://www.oneforall.com",
+	"description" : "oneforall!"
 }
 ]
