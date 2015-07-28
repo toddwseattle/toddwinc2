@@ -214,7 +214,7 @@
 	"toddrole" : "Todd worked with Len Kawell, the very talented founder of timebox at Microsoft."
 },
 {
-"id": 19,
+"id": 20,
 "activetype" : "angel",
 "name" : "PicoBrew",
 "companyurl" : "http://picobrew.com",
@@ -223,5 +223,5 @@
 "logo" :"http://picobrew.com/images/Menu/hm_btn_Logo-Pico.png",
 "description" :"PicoBrew is a reveolutionary internet connected device that enables beer to be brewed reliabliy at home.",
 "toddrole" : "Todd worked with Bill at Microsoft, where Bill was a serial innovator."
-}
+},
 ]
